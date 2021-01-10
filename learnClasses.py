@@ -16,4 +16,3 @@ print(man.get_name())
 man.bark()
 man.set_age(123)
 print(man.age)
-

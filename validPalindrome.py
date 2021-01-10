@@ -1,6 +1,11 @@
+###############
+#680 LC Valid Palindrome II
 class Solution:
-    def isPal(self, s, b, e):
-        for i in range(n):
+    def isPal(self, s):
+        self.s = s
+        beg = 0
+        end = len(s)-1
+        for _ in range(len(s)):
                 if s[beg] != s[end]:
                     return False
                 beg += 1
@@ -11,18 +16,17 @@ class Solution:
         n = len(s)
         beg = 0
         end = n-1
-        print(n%2)
         if (n % 2 != 0):
-            op = isPal(s, beg, end)
+            print(self.isPal(s))
         elif(n % 2 == 0):
             newS =[]
-            for i in range(n):
+            for i in range(len(s)):
                 if s[beg] != s[end]:
-                    newS = s.replace(s[end], '')
+                    newS = s.replace(s[end], "")
                     break 
                 beg += 1
                 end -= 1
-            op = isPal(s, beg, end)
+            print(self.isPal(newS))
 
 
                 
