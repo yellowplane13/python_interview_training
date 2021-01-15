@@ -19,7 +19,7 @@ def solution(x, space):
     for i in range(0,len(space)-x+1):
         print("i=", i)
         print("x-i=",x+i)
-        print(space[1:3])
+        #print(space[1:3])
         arr.append(space[i:x+i])
         print("minA", min(arr[i]))
         print("arr[i]=",arr[i])
@@ -30,3 +30,40 @@ def solution(x, space):
 
 op = solution(1, [1,2,3,1,2])
 print(op)
+
+
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+#
+# Complete the 'segment' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts following parameters:
+#  1. INTEGER x
+#  2. INTEGER_ARRAY space
+#
+#[8,2,4,6]
+def segment(x, space):
+    # Write your code here
+    n = len(space)
+    arr = []
+    for i in range(0,n-x+1):
+        #print("i:",i)
+        #print(space[i:i+x])
+        temp = min(space[i:i+x])
+        arr.append(temp)
+        #print("temp",temp)
+    #print(arr)
+    return(max(arr))
+        
+
+if __name__ == '__main__':

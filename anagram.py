@@ -18,18 +18,19 @@
 
 # isAnagram('book', 'okbo')
 
-s1 = 'book'
-s2 = 'okbo'
+a = 'book'
+b = 'okbo'
 dict = {}
 
-for i in range(len(s1)):
-    if s1[i] in dict:
-        dict[s1[i]] = dict[s1[i]] + 1
+for i in range(len(a)):
+    if a[i] in dict:
+        print(dict)
+        dict[a[i]] = dict[a[i]] + 1 
     else:
-        dict[s1[i]] = 1
-for i in range(len(s2)):
-    if s2[i] in dict:
-        dict[s1[i]] -= 1
+        dict[a[i]] = 1
+for i in range(len(b)):
+    if b[i] in dict:
+        dict[a[i]] -= 1
 if sum(dict.values()) == 0:
     print(True)
 else:
