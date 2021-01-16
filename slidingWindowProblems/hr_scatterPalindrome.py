@@ -33,11 +33,40 @@
 # op.countSubstrings('aabb')
 
 
-from collections import Counter
+# from collections import Counter
 
-def scattered_palindrome(s):
-    counts = Counter(s)
-    print (len([count for count in counts.values() if count % 2 == 1]) <= 1)
-    return counts
+# def scattered_palindrome(s):
+#     counts = Counter(s)
+#     print (len([count for count in counts.values() if count % 2 == 1]) <= 1)
+#     return counts
 
-print(scattered_palindrome("aabb"))
+# print(scattered_palindrome("aabb"))
+
+def ispalin(s):
+    if len(s)%2==0:
+        for i in s:
+            if s.count(i)%2!=0:
+                return False
+    else:
+        sum =0
+        for i in set(s):
+            if s.count(i)%2==1:
+                sum = sum+1
+        if sum == 1:
+            return True
+        else:
+            return False
+
+    return True
+
+def solution(S):
+    # write your code in Python 3.6
+    count=len(S)
+    for i in range(len(S)):
+        for j in range(i+1,len(S)):
+            if ispalin(S[i:j+1]):
+                count=count+1
+
+    return count
+
+print(solution("bbrrg"))
