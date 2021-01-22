@@ -103,22 +103,22 @@ class DoublyLinkedList:
         return
 
 
-newLL = DoublyLinkedList()
-newLL.prepend(0)
-newLL.printLL()
-newLL.AddBeforeNode(0,-1)
-newLL.append(1)
-newLL.printLL()
-newLL.append(2)
-newLL.printLL()
-newLL.prepend(-1)
-newLL.printLL()
-newLL.append(4)
-newLL.printLL()
-newLL.AddBeforeNode(4,3.5)
-newLL.printLL()
-newLL.addAfterNode(2,3)
-newLL.printLL()
+# newLL = DoublyLinkedList()
+# newLL.prepend(0)
+# newLL.printLL()
+# newLL.AddBeforeNode(0,-1)
+# newLL.append(1)
+# newLL.printLL()
+# newLL.append(2)
+# newLL.printLL()
+# newLL.prepend(-1)
+# newLL.printLL()
+# newLL.append(4)
+# newLL.printLL()
+# newLL.AddBeforeNode(4,3.5)
+# newLL.printLL()
+# newLL.addAfterNode(2,3)
+# newLL.printLL()
 
 # 0 <->
 # -1 <->0 <->1 <->
