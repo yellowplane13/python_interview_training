@@ -1,3 +1,6 @@
+# Resources:
+#https://www.youtube.com/watch?v=Am5u1vaT0x0&list=PL5tcWHG-UPH3nDinW5u_oRcNv6hwhY7ET&index=3&ab_channel=LucidProgramming
+# The only difference is I used inheritance and took append function from another class : doublyLL_addAfter_addBefore
 from doublyLL_addAfter_addBefore import Node
 
 from doublyLL_addAfter_addBefore import DoublyLinkedList
@@ -51,9 +54,6 @@ class DeleteDLL(DoublyLinkedList):
                 currPtr.prev = None
                 currPtr = None
                 return
-            
-
-            
 
 dd = DeleteDLL()
 dd.append(1)
