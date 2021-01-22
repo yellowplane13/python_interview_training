@@ -55,20 +55,20 @@ class DeleteDLL(DoublyLinkedList):
                 currPtr = None
                 return
 
-dd = DeleteDLL()
-dd.append(1)
-dd.prepend(0)
-dd.append(2)
-dd.append(3)
-dd.printLL()
-dd.deleteNode(0)
-dd.printLL()
-dd.deleteNode(2)
-dd.printLL()
-dd.deleteNode(3)
-dd.printLL()
-dd.deleteNode(1)
-dd.printLL()
+# dd = DeleteDLL()
+# dd.append(1)
+# dd.prepend(0)
+# dd.append(2)
+# dd.append(3)
+# dd.printLL()
+# dd.deleteNode(0)
+# dd.printLL()
+# dd.deleteNode(2)
+# dd.printLL()
+# dd.deleteNode(3)
+# dd.printLL()
+# dd.deleteNode(1)
+# dd.printLL()
 
 # output
 #0 <->1 <->2 <->3 <->
