@@ -32,13 +32,21 @@ class LinkedList:
             while currPointer.next:
                 currPointer = currPointer.next
             currPointer.next = Node(data, None)
+    
 
 if __name__ == '__main__':
     ll = LinkedList()
     ll.insert_head(10)
+    ll.printLl()
     ll.insert_at_end(20)
+    ll.printLl()
 
     ll.insert_at_end(30)
     ll.printLl()
     ll.insert_head(0)
     ll.printLl()
+
+# 10 -->
+# 10 -->20 -->
+# 10 -->20 -->30 -->
+# 0 -->10 -->20 -->30 -->
