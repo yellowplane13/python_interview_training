@@ -1,4 +1,6 @@
 # 146 leetcode
+# Only store keys in the deque DS
+# key values are stored in dict 
 
 from collections import deque
 class LRUCache:

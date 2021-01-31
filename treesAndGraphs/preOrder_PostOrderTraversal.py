@@ -5,12 +5,7 @@
 #     7   8   9   10
 
 # ROOT LEFT RIGHT since its "PRE"order traversal, the root comes "PRE" to left and right
-
-class Node:
-    def __init__(self,data):
-        self.data = data
-        self.left = None
-        self.right = None
+from treeInterface import Node
 
 def preOrder(node):
     if (node is not None):
@@ -22,7 +17,7 @@ def postOrder(node):
     if node is not None:
         postOrder(node.left)
         postOrder(node.right)
-        print(node.data)
+        print(node.data,"->" , end='')
 
 
 root = Node(4)
@@ -33,7 +28,8 @@ root.left.right = Node(8)
 root.right.right = Node(10)
 root.right.left = Node(9)
 
-#preOrder(root)
+preOrder(root)
+print()
 postOrder(root)
 print()
 #4 ->5 ->7 ->8 ->6 ->9 ->10

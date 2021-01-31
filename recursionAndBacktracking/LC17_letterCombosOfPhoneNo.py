@@ -29,6 +29,7 @@ def findCombos_helperFn(digits, currStr, sol, d):
     for char in d[digits[0]]:
         currStr += char
         findCombos_helperFn(digits[1:], currStr, sol, d)
+        # important step to reduce the curr str back to the first d[0] => a,b,c
         currStr = currStr[:-1]
 
 print(letterCombinations('23'))
