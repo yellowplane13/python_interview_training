@@ -23,6 +23,14 @@ class Solution:
             if len(test) > len(res):
                 res = test
         return res
+
+        # newS = s.split()
+        # print(newS)
+        # print(newS[::-1])
+        # finalStr =''
+        # for word in newS:
+        #     finalStr = word + ' ' + finalStr
+        # return finalStr.strip()
     
 op = Solution()
 

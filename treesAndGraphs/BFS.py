@@ -11,19 +11,22 @@ vertices = {
     'G':['E','H'],
     'H':['G','F']
 }
-
 # initialize all the required dictionaries and variables
+s = 'A' # source node
+print(s,": Source Node")
+
 visited = {}
-distance = {}
+distance = {} # distance from the source to every node
 path = []
-parent = {}
-queue = Queue()
+parent = {} # parent of every node is stored here
+queue = Queue() # contains all the children of the current element that will be looped over for the next round
 
 # set them to default values
 for node in vertices.keys():
     parent[node] = None
-    distance[node] = float("-inf")
-s = 'G'
+    distance[node] = float("-inf") 
+
+# initialize source values
 visited[s] = True
 distance[s] = 0
 queue.put(s)
@@ -40,7 +43,7 @@ while not queue.empty():
             #print(visited)
             #print(path)
 
-print(path)
+print(path,":total path")
 #print(distance)
 
 # CODE TO GET THE SHORTEST PATH FROM SOURCE NODE
@@ -51,4 +54,5 @@ while parent[d] is not None:
     d = parent[d]
 shortestPath.append(d)
 shortestPath.reverse()
-print(shortestPath)
+print(shortestPath,":shortest path")
+
