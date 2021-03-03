@@ -10,7 +10,7 @@ class Node:
 def inorderTraverse(node):
     if node is not None:
         inorderTraverse(node.left)
-        print(node.data)
+        print(node.data,end='')
         inorderTraverse(node.right)
 
 
@@ -24,5 +24,7 @@ root = Node(4)
 root.left = Node(5)
 root.right = Node(6)
 root.left.left = Node(7)
+root.left.right = Node(8)
+root.right.left = Node(9)
 
 inorderTraverse(root)
