@@ -17,4 +17,5 @@ class Solution:
         return res % (10 ** 9 + 7) 
 
 op=Solution()
-print(op.countHomogenous("abbcccaa"))
+#print(op.countHomogenous("abbcccaa"))
+print(op.countHomogenous("c"))

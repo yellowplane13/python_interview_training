@@ -1,8 +1,10 @@
 class Solution:
     def toHexspeak(self, num: str) -> str:
-        hexa=hex(int(num))
-        hexStr=str(hexa)
-        hexa=hexStr.replace("0x","")
+        hexa=str(hex(int(num)))
+        #hexStr=str(hexa)
+        print(type(hexa))
+        hexa=hexa.replace("0x","")
+        hexa=hexa.upper()
         print(hexa)
         ans=""
         for i,v in enumerate(hexa):

@@ -22,6 +22,6 @@ class Solution:
 op = Solution()
 result=op.transformArray([1,9,7,4,8,9])
 #result=op.transformArray([1,6,7,4,8,5])
-#result=op.transformArray([1,6,3,4,3,5])
+result=op.transformArray([1,6,3,4,3,5])
 print(result)
 #next problem to sovle : https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description/ 
